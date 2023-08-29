@@ -15,19 +15,19 @@ The dataset used in this project is from Kaggle and belongs to a fictious compan
 Through exploratory data analysis, the following insights have been gathered from the three reports:
 *Note: Due to incomplete data resulting in skewing of results, only data up til Sep'17 has been used in exploratory data analysis*
 
-1. **Sales**
-Excluding cancelled deliveries, "Latin America" (~30.0%) and "Europe" (~27.6%) make up the majority of sales by region, with "Standard Class" (~59.8%) as a shipping mode accounting for the majority of shipments. With regards to product category type, "Fishing" (~$5.4 million in total sales) is a clear leader with the next highest category type "Cleats" bringing in ~$3.4 million.
+1. Overall: Excluding cancelled deliveries, "Latin America" (~30.0%) and "Europe" (~27.6%) make up the majority of sales by delivery region, with "Standard Class" (~59.8%) as a shipping mode accounting for the majority of shipments
 
-Additionally, sales for the top 10 product category types are evenly distributed with regards to region and shipping mode.
+2. Product category type: "Fishing" (~$5.4 million in total sales) is a clear leader with the next highest category type "Cleats" bringing in ~$3.4 million. Sales for the top 10 product category types are evenly distributed with regards to delivery region and shipping mode.
 
-With regards to total sales and profits by month, there are 3 main outlier areas (Feb'15, Feb'16, Aug-Sep'17). Both Feb'15 and Feb'16 show a drop followed by an immediate V-shaped recovery back into baseline, while Aug-Sep'17 show a sustained boost above baseline. There is no clear commonality between Feb'15 and Feb'16 based on the Sales report, while it is clear the boost in Aug-Sep'17 is attributed to the "Europe" region.
+3. Time period: There are 3 main outlier areas (Feb'15, Feb'16, Aug-Sep'17) with regards to total sales and profits
+a) Both Feb'15 and Feb'16 show a sharp drop followed by an sharp V-shaped recovery back into baseline, with a decrease in order quantity being the most likely contributing factor. However, it should be noted that Jun'17 also had a slightly smaller but comparable drop in order quantity, yet sales remained within baseline, though in the lower region. This can be attributed to the order mix in each time period, since the sales price and discounts offered would be different
+b) Aug-Sep'17 shows a sustained boost above baseline, which can be attributed to a change in order mix due to more available product category types since Q2'2017. Some of these new product category types (eg. "Golf Clubs") rank amongst the highest in terms of sales, giving rise to a boost in sales.
 
-2. **Delivery**
-The On-time Delivery rate has been calculated to be ~40.93%, which is far below expected [industry](https://xcelpros.com/on-time-delivery-in-operations-part-1/) [targets](https://elogii.com/blog/on-time-delivery/#:~:text=A%20good%20on%20time%20delivery,goals%20based%20on%20current%20performance.) of at least 90-95%.
+5. On-time Delivery: The On-time Delivery rate has been calculated to be ~40.93%, which is far below expected [industry](https://xcelpros.com/on-time-delivery-in-operations-part-1/) [targets](https://elogii.com/blog/on-time-delivery/#:~:text=A%20good%20on%20time%20delivery,goals%20based%20on%20current%20performance.) of at least 90-95%.
 
-Notably ~4.4% of deliveries have been cancelled (likely due to customer dissatisfaction or insufficient products to fulfil orders on the company's end). From the report, there are no clear indicators based on country, shipping mode or period.
+6. Cancelled Deliveries: Notably ~4.4% of deliveries have been cancelled (likely due to customer dissatisfaction or insufficient products to fulfil orders on the company's end). From the report, there are no clear indicators based on country, shipping mode or period.
 
-4. **Customer**
+7. 
 
 
 
