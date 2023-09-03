@@ -18,7 +18,11 @@ Through exploratory data analysis, the following insights have been gathered fro
 
 * **Individual report insights**:
 
-**Sales**: Excluding cancelled deliveries, "Latin America" (~30.0%) and "Europe" (~27.6%) make up the majority of sales by delivery region, with "Standard Class" (~59.8%) as a shipping mode accounting for the majority of shipments by sales. With regards to product category type, "Fishing" ($5.4 million in total sales) is a clear leader with the next highest category type "Cleats" bringing in ~$3.4 million. Sales for the top 10 product category types are evenly distributed with regards to delivery region and shipping mode. Looking at monthly performance over time, it is clear sales and profits are closely correlated as per expectations. However, a few outlier areas can be observed which will be addressed further below under point no. 2 (Sales and Profits trend).
+**Sales**: Excluding cancelled deliveries, "Latin America" (~30.0%) and "Europe" (~27.6%) make up the majority of sales by delivery region, with "Standard Class" (~59.8%) as a shipping mode accounting for the majority of shipments by sales. With regards to product category type, "Fishing" ($5.4 million in total sales) is a clear leader with the next highest category type "Cleats" bringing in ~$3.4 million. 
+
+![](https://github.com/vikashperiasamy/Power_Bi_Dashboard_for_Supply_Chain_Data/blob/main/Sales%20evenly%20distributed.gif)
+
+Sales for the top 10 product category types are evenly distributed with regards to delivery region and shipping mode. Looking at monthly performance over time, it is clear sales and profits are closely correlated as per expectations. However, a few outlier areas can be observed which will be addressed further below under point no. 2 (Sales and Profits trend).
 
 **Delivery**: Data observations with regards to delivery will be addressed further below under point no. 3 (On-time Delivery).
 
