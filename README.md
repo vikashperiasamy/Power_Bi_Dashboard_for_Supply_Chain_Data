@@ -16,30 +16,36 @@ Through exploratory data analysis, the following insights have been gathered fro
 
 *Note: Due to incomplete data resulting in skewing of results, only data up til Sep'17 has been used in exploratory data analysis*
 
-* **Individual report insights**:
+**1. Sales**:
 
-**Sales**: Excluding cancelled deliveries, "Latin America" (~30.0%) and "Europe" (~27.6%) make up the majority of sales by delivery region, with "Standard Class" (~59.8%) as a shipping mode accounting for the majority of shipments by sales. With regards to product category type, "Fishing" ($5.4 million in total sales) is a clear leader with the next highest category type "Cleats" bringing in ~$3.4 million. 
+a) Excluding cancelled deliveries, "Latin America" (~30.0%) and "Europe" (~27.6%) make up the majority of sales by delivery region, with "Standard Class" (~59.8%) as a shipping mode accounting for the majority of shipments by sales. 
+
+b) With regards to product category type, "Fishing" ($5.4 million in total sales) is a clear leader with the next highest category type "Cleats" bringing in ~$3.4 million.
+
+c) Sales for the top 10 product category types are evenly distributed with regards to delivery region and shipping mode.
 
 ![](https://github.com/vikashperiasamy/Power_Bi_Dashboard_for_Supply_Chain_Data/blob/main/Sales%20evenly%20distributed.gif)
 
-Sales for the top 10 product category types are evenly distributed with regards to delivery region and shipping mode. Looking at monthly performance over time, it is clear sales and profits are closely correlated as per expectations. However, a few outlier areas can be observed which will be addressed further below under point no. 2 (Sales and Profits trend).
+d) Looking at monthly performance over time, it is clear sales and profits are closely correlated as per expectations. However, there are *three main outlier areas (Feb'15, Feb'16, Aug-Sep'17)* which can be analysed in two groups as follows:
 
-**Delivery**: Data observations with regards to delivery will be addressed further below under point no. 3 (On-time Delivery).
+$~~~~$ i) *Both Feb'15 and Feb'16 show a sharp drop followed by an sharp V-shaped recovery* back into baseline, with a *decrease in order quantity being the most likely contributing factor*. However, it should be noted that Jun'17 also had a slightly smaller but comparable drop in order quantity, yet sales remained within baseline, though in the lower region. This can be attributed to the order mix in each time period, since the sales price and discounts offered would be different.
 
-**Customer**: Looking at payment method, there are no changes in preference from 2015 to 2017 with "Debit" being the main choice. Across all five delivery regions, a consistent pattern is observed with regards to customer segment, with "Consumer" being the main contributing factor. With regards to product category type aggregated by number of customers, "Fishing" is ranked only fifth with "Cleats" ranking as first, although it should be noted the distribution is more even compared to the sales data. This contrast between sales and customer quantity can be attributed to possible greater customer loyalty for "Fishing" and differences in sales price ("Fishing" products costing $399.98 compared to "Cleats" products costing $59.99 per item) 
+$~~~~$ ii) *Aug-Sep'17 shows a sustained boost above baseline*, which can be attributed to a *change in order mix and demand from "Europe" delivery region*. There is increased sales in existing product category types ("Fishing","Golf Gloves" etc.), while there also appears to be *newly available product category types since Q2'17*, some of which ("Strength Training","Basketball" etc.) rank amongst the highest in terms of sales price, thereby naturally adding to a boost in sales.
 
-* **Sales and Profits trend**: 
+**2. Delivery**: 
 
-As mentioned above, there are *three main outlier areas (Feb'15, Feb'16, Aug-Sep'17)* which can be analysed in two groups as follows:
-   
-a) *Both Feb'15 and Feb'16 show a sharp drop followed by an sharp V-shaped recovery* back into baseline, with a *decrease in order quantity being the most likely contributing factor*. However, it should be noted that Jun'17 also had a slightly smaller but comparable drop in order quantity, yet sales remained within baseline, though in the lower region. This can be attributed to the order mix in each time period, since the sales price and discounts offered would be different
+a) The *On-time Delivery rate has been calculated to be ~40.93%*, which is far below expected [industry](https://xcelpros.com/on-time-delivery-in-operations-part-1/) [targets](https://elogii.com/blog/on-time-delivery/#:~:text=A%20good%20on%20time%20delivery,goals%20based%20on%20current%20performance.) of at least 90-95%. 
 
-b) *Aug-Sep'17 shows a sustained boost above baseline*, which can be attributed to a *change in order mix and demand from "Europe" delivery region*. There is increased sales in existing product category types ("Fishing","Golf Gloves" etc.), while there also appears to be *newly available product category types since Q2'17*, some of which ("Strength Training","Basketball" etc.) rank amongst the highest in terms of sales price, thereby naturally adding to a boost in sales.
+b) Notably *~4.4% of deliveries have been cancelled* (likely due to customer dissatisfaction or insufficient products to fulfil orders on the company's end), while *~54.7% deliveries are late*. These two groups will be analysed as follows:
 
-* **On-time Delivery**:
+$~~~~$ i) Cancelled Deliveries: At frst glance, there are no clear indicators based on delivery country, shipping mode or time period. However, it is interesting to see *payment methods falling under "Others" being used for 100% of cancelled deliveries* (although it should be noted that such payment methods are also used for deliveries falling under the On-time Delivery data group). A more detailed investigation into this factor and its accompanying details should yield some insight to lessen or completely eliminate cancelled deliveries.
 
-The *On-time Delivery rate has been calculated to be ~40.93%*, which is far below expected [industry](https://xcelpros.com/on-time-delivery-in-operations-part-1/) [targets](https://elogii.com/blog/on-time-delivery/#:~:text=A%20good%20on%20time%20delivery,goals%20based%20on%20current%20performance.) of at least 90-95%. Notably *~4.4% of deliveries have been cancelled* (likely due to customer dissatisfaction or insufficient products to fulfil orders on the company's end), while *~54.7% deliveries are late*. These two groups will be analysed as follows:
+$~~~~$ ii) Late Deliveries: At first glance, there are no clear indicators based on delivery country, product category type, or time period. However, it is interesting to note that *"First Class" as a shipping mode is only present in late or cancelled deliveries*. Further investigation and, if deemed necessary, exclusion of this shipping mode will likely help reduce the quantity of late deliveries.
 
-a) Cancelled Deliveries: At frst glance, there are no clear indicators based on delivery country, shipping mode or time period. However, it is interesting to see *payment methods falling under "Others" being used for 100% of cancelled deliveries* (although it should be noted that such payment methods are also used for deliveries falling under the On-time Delivery data group). A more detailed investigation into this factor and its accompanying details should yield some insight to lessen or completely eliminate cancelled deliveries.
+**3. Customer**: 
 
-b) Late Deliveries: At first glance, there are no clear indicators based on delivery country, product category type, or time period. However, it is interesting to note that *"First Class" as a shipping mode is only present in late or cancelled deliveries*. Further investigation and, if deemed necessary, exclusion of this shipping mode will likely help reduce the quantity of late deliveries.
+a) Looking at payment method, there are no changes in preference from 2015 to 2017 with "Debit" being the main choice. 
+
+b) With regards to customer segment, "Consumer" is observed to be the main contributing factor consistently across all five delivery regions.
+
+c) With regards to product category type aggregated by number of customers, "Fishing" is ranked only fifth with "Cleats" ranking as first, although it should be noted the distribution is more even compared to the sales data. This contrast between sales and customer quantity can be attributed to possible greater customer loyalty for "Fishing" and differences in sales price ("Fishing" products costing $399.98 compared to "Cleats" products costing $59.99 per item).
