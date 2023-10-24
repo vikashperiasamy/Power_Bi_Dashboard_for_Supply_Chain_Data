@@ -18,11 +18,11 @@ Through exploratory data analysis, the following insights have been gathered fro
 
 **1. Sales** (excluding cancelled deliveries):
 
-a) "Latin America" (~30.0%) and "Europe" (~27.6%) make up the majority of sales by delivery region, with "Standard Class" (~59.8%) as a shipping mode accounting for the majority of shipments by sales. 
+a) "Latin America" (~30.0%) and "Europe" (~28.0%) make up the majority of sales by delivery region, with "Standard Class" (~59.8%) as a shipping mode accounting for the majority of shipments by sales. 
 
-b) With regards to product category type, "Fishing" ($5.4 million in total sales) is a clear leader with the next highest category type "Cleats" bringing in ~$3.4 million.
+b) With regards to product category type, "Fishing" (~$5.4 million in total sales) is a clear leader with the next highest category type "Cleats" bringing in ~$3.4 million.
 
-c) Sales for the top 10 product category types are mostly evenly distributed with regards to delivery region and shipping mode.
+c) Individual sales for the top 10 product category types are mostly evenly distributed with regards to both delivery region and shipping mode, with no outliers from total sales distributions.
 
 ![](https://github.com/vikashperiasamy/Power_Bi_Dashboard_for_Supply_Chain_Data/blob/main/Sales%20evenly%20distributed.gif)
 
@@ -30,7 +30,7 @@ d) Looking at monthly performance over time, it is clear sales and profits are c
 
    * i) *Both Feb'15 and Feb'16 show a sharp drop followed by a sharp V-shaped recovery* back into baseline, with a *decrease in order quantity being the most likely contributing factor*. However, it should be noted that Jun'17 also had a slightly smaller but comparable drop in order quantity, yet sales remained within baseline, though in the lower region. This can be attributed to the order mix in each time period, since the sales price and discounts offered would be different.
 
-   * ii) *Aug-Sep'17 shows a sustained boost above baseline*, which can be attributed to a *change in order mix and demand from "Europe" delivery region*. There is increased sales in existing product category types ("Fishing", "Golf Gloves" etc.), while there also appears to be *newly available product category types since Q2'17*, some of which ("Strength Training", "Basketball" etc.) rank amongst the highest in terms of sales price, thereby naturally adding to a boost in sales.
+   * ii) *Aug-Sep'17 shows a sustained boost above baseline*, which can be attributed to a *change in order mix and demand from "Europe" delivery region*. There is increased sales in existing product category types ("Fishing", "Golf Gloves" etc.), while there also appears to be *newly available product category types since Q2'17*, some of which ("Strength Training", "Basketball" etc.) rank amongst the highest in terms of sales price, thereby naturally boosting sales.
 
 **2. Delivery**: 
 
@@ -44,7 +44,7 @@ b) Notably *~4.4% of deliveries have been cancelled* (likely due to customer dis
 
 **3. Customer**: 
 
-a) Looking at payment method, there are no changes in preference from 2015 to 2017 with "Debit" being the main choice. 
+a) Looking at payment method, there are no changes in preference from 2015 to 2017 with "Debit" being the preferred choice. 
 
 b) With regards to customer segment, "Consumer" is observed to be the highest contributing customer segment consistently across all five delivery regions.
 
