@@ -18,13 +18,13 @@ Through exploratory data analysis, the following insights have been gathered fro
 
 **1. Sales** (excluding cancelled deliveries):
 
+![](https://github.com/vikashperiasamy/Power_Bi_Dashboard_for_Supply_Chain_Data/blob/main/Images/Sales%20Report.png)
+
 a) "Latin America" (~30.0%) and "Europe" (~28.0%) make up the majority of sales by delivery region, with "Standard Class" (~59.8%) as a shipping mode accounting for the majority of shipments by sales. 
 
 b) With regards to product category type, "Fishing" (~$5.4 million in total sales) is a clear leader with the next highest category type "Cleats" bringing in ~$3.4 million.
 
 c) Individual sales for the top 10 product category types are mostly evenly distributed with regards to both delivery region and shipping mode, with no outliers from total sales distributions.
-
-![](https://github.com/vikashperiasamy/Power_Bi_Dashboard_for_Supply_Chain_Data/blob/main/Sales%20evenly%20distributed.gif)
 
 d) Looking at monthly performance over time, it is clear sales and profits are closely correlated as per expectations. However, there are *three main outlier areas (Feb'15, Feb'16, Aug-Sep'17)* which can be analysed in two groups as follows:
 
@@ -33,6 +33,8 @@ d) Looking at monthly performance over time, it is clear sales and profits are c
    * ii) *Aug-Sep'17 shows a sustained boost above baseline*, which can be attributed to a *change in order mix and demand from "Europe" delivery region*. There is increased sales in existing product category types ("Fishing", "Golf Gloves" etc.), while there also appears to be *newly available product category types since Q2'17*, some of which ("Strength Training", "Basketball" etc.) rank amongst the highest in terms of sales price, thereby naturally boosting sales.
 
 **2. Delivery**: 
+
+![](https://github.com/vikashperiasamy/Power_Bi_Dashboard_for_Supply_Chain_Data/blob/main/Images/Delivery%20Report.png)
 
 a) The *On-time Delivery rate has been calculated to be ~40.93%*, which is far below expected [industry](https://xcelpros.com/on-time-delivery-in-operations-part-1/) [targets](https://elogii.com/blog/on-time-delivery/#:~:text=A%20good%20on%20time%20delivery,goals%20based%20on%20current%20performance.) of at least 90-95%. 
 
@@ -43,6 +45,8 @@ b) Notably *~4.4% of deliveries have been cancelled* (likely due to customer dis
    * ii) Late Deliveries: At first glance, there are no clear indicators based on delivery country, product category type, or time period. However, it is interesting to note that *"First Class" as a shipping mode is only present in late or cancelled deliveries*. Further investigation and, if deemed necessary, exclusion of this shipping mode will likely help reduce the quantity of late deliveries.
 
 **3. Customer**: 
+
+![](https://github.com/vikashperiasamy/Power_Bi_Dashboard_for_Supply_Chain_Data/blob/main/Images/Customer%20Report.png)
 
 a) Looking at payment method, there are no changes in preference from 2015 to 2017 with "Debit" being the preferred choice. 
 
